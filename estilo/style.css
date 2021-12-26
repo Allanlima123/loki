@@ -1,0 +1,175 @@
+
+.fundo{
+    background-image: url(../imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.fundo .heading {
+    text-align: center;
+}
+
+.fundo .heading .price{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.fundo .heading h1{
+    font-size: 96px;
+    color: var(--color-white);
+    margin: 50px 0 80px 0;
+    font-weight: 700;
+}
+
+.fundo .box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fundo .box .image{
+    width: 184px;
+    height: 267px;
+    margin-right: 73px;
+}
+
+.fundo .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fundo .box .Sobre-o-filme{
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.fundo .box .Sobre-o-filme .descricao{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-white);
+    max-width: 660px;
+}
+
+.fundo .box .Sobre-o-filme .avaliacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 42px 0;
+    max-width: 570px;
+}
+
+.fundo .box .Sobre-o-filme .avaliacao .duracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo .box .Sobre-o-filme .avaliacao .duracao .tempo{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    border: 2px solid var(--color-white);
+}
+
+.fundo .box .Sobre-o-filme .avaliacao .duracao span{
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.fundo .box .Sobre-o-filme .avaliacao .stars img{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.fundo .box .Sobre-o-filme .avaliacao span{
+    color: var(--color-white);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.fundo .box .Sobre-o-filme .btn{
+    display: inline-block;
+    width: 184px;
+    height: 52px;
+    background: var(--color-blue);
+    line-height: 52px;
+    text-align: center;
+    color: var(--color-white);
+    margin-right: 21px;
+}
+
+.fundo .box .Sobre-o-filme .btn-trailer{
+    display: inline-block;
+    width: 115px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background: var(--color-bark);
+    color: var(--color-white);
+}
+
+@media (max-width:768px){
+    .fundo .heading {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .fundo .box{
+        margin: 0 25px;
+        text-align: center;
+    }
+
+    .fundo .box .image{
+        margin: 10px 0;
+    }
+
+    .fundo .box .Sobre-o-filme .avaliacao{
+        display: block;
+    }
+
+    .fundo .box .Sobre-o-filme .avaliacao .stars{
+        margin: 18px 0;
+    }
+}
+
+@media (max-width:375px){
+    .fundo .box .Sobre-o-filme{
+        margin-bottom: 50px;
+    }
+
+    .fundo .box .Sobre-o-filme .btn{
+        display: block;
+        width: 200px;
+        height: 52px;
+        background: var(--color-blue);
+        line-height: 52px;
+        text-align: center;
+        color: var(--color-white);
+        margin: 25px auto;
+    }
+
+    .fundo .box .Sobre-o-filme .btn-trailer{
+        display: inline-block;
+        width: 200px;
+        height: 52px;
+        text-align: center;
+        line-height: 52px;
+        background: var(--color-bark);
+        color: var(--color-white);
+    }
+}
+
